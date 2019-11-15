@@ -20,6 +20,12 @@ namespace lab10
             btnHello.Location = new Point(20, 20);
             btnHello.Text = "Hello";
             this.Controls.Add(btnHello);
+            btnHello.Click += BtnHello_Click;
+        }
+
+        private void BtnHello_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello");
         }
     }
 }
