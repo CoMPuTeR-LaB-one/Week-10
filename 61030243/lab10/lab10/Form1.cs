@@ -12,9 +12,14 @@ namespace lab10
 {
     public partial class Form1 : Form
     {
+        Button btnHello;
         public Form1()
         {
             InitializeComponent();
+            btnHello = new Button();
+            btnHello.Location = new Point(20, 20);
+            btnHello.Text = "Hello";
+            this.Controls.Add(btnHello);
         }
     }
 }
