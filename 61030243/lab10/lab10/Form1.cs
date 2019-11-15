@@ -15,6 +15,12 @@ namespace lab10
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Hello World";
+            this.BackColor = Color.LightGreen;
+            this.ClientSize = new Size(500, 300);
+            this.WindowState = FormWindowState.Maximized;
+            this.ControlBox = false;
+            this.ShowInTaskbar = false;
         }
     }
 }
