@@ -28,72 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnOpenFile = new System.Windows.Forms.Button();
-            this.txtboxFileName = new System.Windows.Forms.TextBox();
+            this.btnColorDialog = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
-            this.propertyGrid2 = new System.Windows.Forms.PropertyGrid();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // openFileDialog1
+            // btnColorDialog
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // btnOpenFile
-            // 
-            this.btnOpenFile.Location = new System.Drawing.Point(12, 12);
-            this.btnOpenFile.Name = "btnOpenFile";
-            this.btnOpenFile.Size = new System.Drawing.Size(88, 42);
-            this.btnOpenFile.TabIndex = 0;
-            this.btnOpenFile.Text = "Open file";
-            this.btnOpenFile.UseVisualStyleBackColor = true;
-            this.btnOpenFile.Click += new System.EventHandler(this.BtnOpenFile_Click);
-            // 
-            // txtboxFileName
-            // 
-            this.txtboxFileName.Location = new System.Drawing.Point(12, 60);
-            this.txtboxFileName.Name = "txtboxFileName";
-            this.txtboxFileName.Size = new System.Drawing.Size(382, 22);
-            this.txtboxFileName.TabIndex = 1;
+            this.btnColorDialog.Location = new System.Drawing.Point(12, 12);
+            this.btnColorDialog.Name = "btnColorDialog";
+            this.btnColorDialog.Size = new System.Drawing.Size(140, 35);
+            this.btnColorDialog.TabIndex = 0;
+            this.btnColorDialog.Text = "Color Dialog";
+            this.btnColorDialog.UseVisualStyleBackColor = true;
+            this.btnColorDialog.Click += new System.EventHandler(this.BtnColorDialog_Click);
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Location = new System.Drawing.Point(400, 12);
+            this.propertyGrid1.Location = new System.Drawing.Point(406, 12);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.SelectedObject = this.openFileDialog1;
-            this.propertyGrid1.Size = new System.Drawing.Size(388, 426);
-            this.propertyGrid1.TabIndex = 2;
+            this.propertyGrid1.SelectedObject = this.colorDialog1;
+            this.propertyGrid1.Size = new System.Drawing.Size(382, 426);
+            this.propertyGrid1.TabIndex = 1;
             // 
-            // propertyGrid2
+            // pictureBox1
             // 
-            this.propertyGrid2.Location = new System.Drawing.Point(12, 88);
-            this.propertyGrid2.Name = "propertyGrid2";
-            this.propertyGrid2.Size = new System.Drawing.Size(382, 350);
-            this.propertyGrid2.TabIndex = 3;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(388, 233);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.propertyGrid2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.propertyGrid1);
-            this.Controls.Add(this.txtboxFileName);
-            this.Controls.Add(this.btnOpenFile);
+            this.Controls.Add(this.btnColorDialog);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button btnOpenFile;
-        private System.Windows.Forms.TextBox txtboxFileName;
+        private System.Windows.Forms.Button btnColorDialog;
+        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
-        private System.Windows.Forms.PropertyGrid propertyGrid2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

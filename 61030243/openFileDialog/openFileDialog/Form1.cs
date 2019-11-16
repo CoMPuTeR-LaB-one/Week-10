@@ -18,13 +18,11 @@ namespace openFileDialog
             InitializeComponent();
         }
 
-        private void BtnOpenFile_Click(object sender, EventArgs e)
+        private void BtnColorDialog_Click(object sender, EventArgs e)
         {
-            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
             {
-                txtboxFileName.Text = openFileDialog1.FileName;
-                DirectoryInfo di = new DirectoryInfo(openFileDialog1.FileName);
-                propertyGrid2.SelectedObject = di;
+                pictureBox1.BackColor = colorDialog1.Color;
                 propertyGrid1.Refresh();
             }
         }
