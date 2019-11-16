@@ -69,6 +69,7 @@
             // 
             this.propertyGrid1.Location = new System.Drawing.Point(472, 12);
             this.propertyGrid1.Name = "propertyGrid1";
+            this.propertyGrid1.SelectedObject = this.saveFileDialog1;
             this.propertyGrid1.Size = new System.Drawing.Size(316, 426);
             this.propertyGrid1.TabIndex = 3;
             // 
