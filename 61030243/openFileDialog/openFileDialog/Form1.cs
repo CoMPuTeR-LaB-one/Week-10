@@ -18,11 +18,14 @@ namespace openFileDialog
             InitializeComponent();
         }
 
-        private void BtnColorDialog_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            saveFileDialog1.Filter = "txt file (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.BackColor = colorDialog1.Color;
+                File.WriteAllText(saveFileDialog1.FileName, textBox1.Text);
                 propertyGrid1.Refresh();
             }
         }

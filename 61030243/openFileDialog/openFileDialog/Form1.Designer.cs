@@ -28,60 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnColorDialog = new System.Windows.Forms.Button();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnColorDialog
+            // label1
             // 
-            this.btnColorDialog.Location = new System.Drawing.Point(12, 12);
-            this.btnColorDialog.Name = "btnColorDialog";
-            this.btnColorDialog.Size = new System.Drawing.Size(140, 35);
-            this.btnColorDialog.TabIndex = 0;
-            this.btnColorDialog.Text = "Color Dialog";
-            this.btnColorDialog.UseVisualStyleBackColor = true;
-            this.btnColorDialog.Click += new System.EventHandler(this.BtnColorDialog_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Text";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 32);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(454, 298);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "ID: 61030243 \r\nName : Widsawa Dhamchomsap \r\nDepartment : Computer Engineering \r\nF" +
+    "aculty :  Industrial Education and Technology \r\nUniversity : King Mongkut’s Inst" +
+    "itute of Technology Ladkrabang";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 336);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 29);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Save to file";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Location = new System.Drawing.Point(406, 12);
+            this.propertyGrid1.Location = new System.Drawing.Point(472, 12);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.SelectedObject = this.colorDialog1;
-            this.propertyGrid1.Size = new System.Drawing.Size(382, 426);
-            this.propertyGrid1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(388, 233);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.propertyGrid1.Size = new System.Drawing.Size(316, 426);
+            this.propertyGrid1.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.propertyGrid1);
-            this.Controls.Add(this.btnColorDialog);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnColorDialog;
-        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
